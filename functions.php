@@ -1,8 +1,5 @@
 <?php if ( ! defined( 'ABSPATH' ) ) exit;
-/*
-update_option( 'siteurl', 'http://golia-thus.test' );
-update_option( 'home', 'http://golia-thus.test' );
-*/
+
 
 // CONSTANT
 define("THEME_DIR", get_template_directory());
@@ -130,5 +127,5 @@ function jind_contact_info(){
   $data['ads_per_page'] = $opts['ads']['per_page'];
   return $data;
 }
-global $ji_opts;
+global $ji_opts; // themes options vars
 $ji_opts = jind_contact_info();
